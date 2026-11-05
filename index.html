@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05091b">
+<title>SADIA AI — Your Personal AI Assistant</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand-mini"><span class="brand-mark">♕</span><span><b>SADIA AI</b><small>Your Personal AI Assistant</small></span></div>
+  <nav class="nav">
+    <a class="active" href="#home">⌂ <span>Home</span></a>
+    <a href="#memory">♧ <span>Memory</span></a>
+    <a href="#chat">▤ <span>Chat</span></a>
+    <a href="#jarvis">♩ <span>Jarvis</span></a>
+    <a href="#settings">⚙ <span>Settings</span></a>
+  </nav>
+  <div class="online"><i></i> Online <span id="state">IDLE</span></div>
+</header>
+<main class="workspace" id="home">
+  <aside class="left-rail">
+    <section class="logo-card">
+      <div class="crown-logo">♕</div><div class="logo-name">SADIA AI</div>
+      <div class="logo-sub">Your Personal AI Assistant</div>
+      <div class="always">Always With You ♡</div>
+    </section>
+    <section class="feature-card">
+      <div><b class="f-icon">▣</b><span>AI Brain<small>(Hybrid)</small></span></div>
+      <div><b class="f-icon purple">♧</b><span>Own Memory</span></div>
+      <div><b class="f-icon yellow">ϟ</b><span>Real-time<br>Response</span></div>
+      <div><b class="f-icon green">♙</b><span>Secure &amp;<br>Private</span></div>
+      <div><b class="f-icon">☁</b><span>Cloud Sync</span></div>
+    </section>
+  </aside>
+  <section class="avatar-column">
+    <div class="avatar-stage" id="stage">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="portrait-wrap">
+        <img id="sadia-portrait" src="assets/sadia.png" alt="Sadia AI avatar">
+        <div class="mouth-overlay" id="sadia-mouth"></div>
+        <div class="portrait-glow"></div>
+      </div>
+      <div class="avatar-caption"><span class="pulse-dot"></span><span id="avatar-caption">সাদিয়া তোমার কথা শুনছে</span></div>
+    </div>
+    <div class="agent-strip" id="agents"></div>
+  </section>
+  <aside class="right-rail" id="chat">
+    <div class="assistant-card"><div><b>SADIA</b><small>AI Assistant</small></div><div class="wave" id="voice-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="chat-heading">Conversation <span>বাংলা ভয়েস সক্রিয়</span></div>
+    <div id="log" aria-live="polite">
+      <div class="m a">হাই! আমি সাদিয়া। তোমার সঙ্গে কথা বলতে প্রস্তুত। 😊</div>
+    </div>
+    <div class="quick-status">
+      <div><span class="status-led"></span> AI Brain <b>Ready</b></div>
+      <div><span class="status-led"></span> Memory <b>Ready</b></div>
+      <div><span class="status-led"></span> Voice <b>Ready</b></div>
+    </div>
+  </aside>
+</main>
+<footer id="bar">
+  <button id="mic" aria-label="Microphone" title="Voice">🎙</button>
+  <button id="camb" aria-label="Camera" title="Camera">▣</button>
+  <input id="inp" placeholder="সাদিয়াকে বলুন…" autocomplete="off">
+  <button id="send" aria-label="Send" title="Send">➤</button>
+  <button id="stop" aria-label="Stop" title="Stop">■</button>
+</footer>
+<video id="cam" playsinline muted hidden></video>
+<script src="js/avatar.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

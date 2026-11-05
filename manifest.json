@@ -1,0 +1,18 @@
+{
+  "name": "SADIA AI",
+  "short_name": "SADIA",
+  "description": "Sadia - Personal AI Assistant",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#04091d",
+  "theme_color": "#04091d",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
